@@ -3,6 +3,9 @@ from datetime import datetime, timedelta
 
 import requests
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def create_list_of_deceased(current_date):

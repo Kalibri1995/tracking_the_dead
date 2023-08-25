@@ -3,6 +3,9 @@ import time
 
 from lib.data_utils import get_deceased_persons, get_deceased_person_info
 from lib.email_utils import send_email
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def main():

@@ -3,10 +3,13 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+from dotenv import load_dotenv
+load_dotenv()
+
 
 def send_email(subject, body):
     # Function for sending email
-    from_email = os.getenv("EMAIL_ADDRESS")
+    from_email = os.getenv("FROM_EMAIL_ADDRESS")
     password = os.getenv("EMAIL_PASSWORD")
     to_email = os.getenv("TO_EMAIL_ADDRESS")
 
